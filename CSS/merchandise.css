@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    font-family: hanken-design-co-hk-requisite-medium;
+
+}
+@font-face {
+    font-family: hanken-design-co-hk-requisite-medium;
+    src: url(../hanken-design-co-hk-requisite-medium.otf);
+}
+
+@font-face {
+    font-family: "Joyride W05 STD";
+    src: url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.eot");
+    src: url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.svg#Joyride W05 STD")format("svg");
+}
+body{
+    background-color: #08040c;
+    color: white;
+}
+.wrap-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    padding-top: 20px;
+    height: auto;
+}
+.ul-item {
+    list-style-type: none; /* Optional: Remove bullet points */
+}
+
+.list-item .item {
+    display: inline-block; /* Make li elements inline-block */
+    margin-right: 25px; /* Optional: Add some space between items */
+}
+
+.item{
+    text-align: center;
+    display: flex;
+}
+li img{
+    width: 65px;
+    height: 57px;
+}
+
+.box{
+    margin-right: 20px;
+    margin-top: 10px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+.box.inView{
+    opacity: 1;
+}
+#boxcontainer{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+button{
+    background-color: white;
+    padding: 3px;
+    padding-right: 4px;
+    border: 0px;
+    border-radius: 5px;
+
+}
+.isi{
+    position: relative;
+    top: 0;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+.text{
+    float: left;
+}
+.box{
+    width: 320px;
+}
+.text h1{
+    font-size: 45px;
+    font-family: "Joyride W05 STD";
+}
+.text h3{
+    opacity: 0.8;
+}
+.text button{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.shop-item{
+    border: 2px solid white;
+    border-radius: 10px;
+    width: 310px;
+    min-width: 75%;
+    height: 300px;
+    background-color: gray;
+}
+
+.shop-item:hover{
+    background-color: gray;
+}
+
+.item-desc{
+    opacity: 0.8;
+}
+

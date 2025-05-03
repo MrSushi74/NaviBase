@@ -1,0 +1,81 @@
+.team{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top: 110px;
+    overflow: hidden;
+    width: 700px;
+}
+.player {
+    display: absolute;
+    width: 200px;
+    transition: 0.5s
+}
+
+.player > .playercontainer > img{
+    width: 171.8px;
+}
+.playercontainer{
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.valoplayer{
+    background: url(../imageNvideo/valoyellowBG.png);
+    background-size: contain;
+}
+.description{
+    width: 100%;
+    height: 150px;
+    background-color: #202020;
+    top: 0;
+}
+.maindesc{
+    width: 100%;
+    top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f6f6f6;
+}
+.maindesc > img{
+    margin-right: 1rem;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.description > img{
+    width: 20px;
+    margin-right: 0;
+}
+.subdesc{
+    color:#fff200;
+    font-size: 10px;
+}
+.age{
+    color:gray;
+    opacity: 0.5;
+    font-size: 10px;
+}
+#next, #previous{
+    position: absolute;
+    top: 40%;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    font-size: xxx-large;
+    font-family: monospace;
+    font-weight: bold;
+    margin-left: -25%;
+}
+#next{
+    left: unset;
+    right: 20px
+}

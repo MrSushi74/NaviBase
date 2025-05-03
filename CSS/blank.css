@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: hanken-design-co-hk-requisite-medium;
+}
+@font-face {
+    font-family: hanken-design-co-hk-requisite-medium;
+    src: url(hanken-design-co-hk-requisite-medium/hanken-design-co-hk-requisite-medium.otf);
+}
+
+.wrapper{
+    height: 100%;
+    background-color: black;
+    
+}
+.content-area{
+    position: fixed;
+    z-index: 2;
+
+}
+.video-background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    z-index: -1; /* Send the video behind other content */
+
+}
+
+video {
+    min-width: 100%;
+    min-height: 50%;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 50%;
+    object-fit: cover;
+
+}
+
+.content-text {
+    position: relative;
+    z-index: 2; /* Bring content above the video */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+
+}
+.title h1{
+    font-family: 'hanken-design-co-hk-requisite-medium';
+}
+.content-text h1{
+    margin-top: 10%;
+    font-size: 75px;
+}
+
+.isi-content {
+    width: 80%; /* Set a width to control the size of the content */
+    max-width: 1200px; /* Optional: Set a maximum width for larger screens */
+    height: auto;
+    margin: 10% auto;
+    /* background-color: black; */
+    z-index: 2;
+    padding: 20px; /* Optional: Add some padding for better spacing */
+    border-radius: 10px;
+}
+.isi-content h2{
+    font-size: 70px
+}
+.isi-content p{
+    font-size: 20px
+}
+.list-item{
+    max-width: 100%;
+    text-align: left;
+    
+}
+.list-item hr{
+    max-width: 44px;
+    margin-bottom: 20px;
+}

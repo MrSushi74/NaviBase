@@ -1,0 +1,87 @@
+html{
+    scroll-behavior: smooth;
+}
+#maintitle{
+    margin-left: 10px ;
+}
+.topbranch{
+    width: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #F6f6f6;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+#slidercontainer{
+    top: 0;
+}
+#slider{
+    top: 0;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+}
+.sliderlogo{
+    width: 100px;
+    height: 75px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    transition: background-color 0.5s ease-out;
+    z-index: 2;
+}
+.sliderlogo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    transition: background-color 0.3s ease-in-out;
+    z-index: 1;
+}
+.sliderlogo:hover::before {
+    cursor: pointer;
+    background-color: yellow;
+    opacity: 0.7;
+    z-index: 1;
+}
+#one a {
+    position: relative;
+    z-index: 2;
+}
+
+.teambox{
+    background-color: #f6f6f6;
+    background-size: contain;
+    height: 600px;
+    margin: 0 2%;
+    margin-bottom: 5%;
+}
+.teambox > .valorantplayer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.teambox h1{
+    color:#f6f6f6
+}
+#navi{
+    color: #FFF200;
+}
+.teamtitle{
+    font-size: larger;
+    letter-spacing: 1px;
+    line-height: 1rem;
+    top: 100px;
+    left: 70px;
+}

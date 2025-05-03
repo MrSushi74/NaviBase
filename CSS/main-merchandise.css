@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: hanken-design-co-hk-requisite-medium;
+
+}
+@font-face {
+    font-family: hanken-design-co-hk-requisite-medium;
+    src: url(../hanken-design-co-hk-requisite-medium.otf);
+}
+
+@font-face {
+    font-family: "Joyride W05 STD";
+    src: url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.eot");
+    src: url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/406b56da0c31245c249b3a3c61560d1a.svg#Joyride W05 STD")format("svg");
+}
+
+
+
+.ul-item {
+    padding: 0; /* Optional: Remove default padding */
+    margin: 0; /* Optional: Remove default margin */
+    list-style-type: none; /* Optional: Remove bullet points */
+}
+
+.list-item .item {
+    display: inline-block; /* Make li elements inline-block */
+    margin-right: 25px; /* Optional: Add some space between items */
+}
+
+.item{
+    text-align: center;
+    display: flex;
+}
+
+
+img{
+    width: 65px;
+    height: 57px;
+}
+
+.isi{
+    position: relative;
+    top: 0;
+    margin-top: 2%;
+    margin-left: 10%;
+}
+.text h1{
+    font-size: 45px;
+    font-family: "Joyride W05 STD";
+}
+
+.list-item li{
+    display: inline-block;
+    position: relative;
+}
+
+.box1{
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-bottom: 10px;
+}
+.box2{
+    margin-left: 5.1%;
+}
+.item1 img{
+    width: 400px;
+    height: 500px;
+    border: 2px solid #08040c;
+    border-radius: 8px;
+    background-color: white;
+
+}
+.item2 img{
+    /* margin-left: 14px; */
+    width: 800px;
+    height: 500px;
+    border: 2px solid #08040c;
+    background-color: white;
+}
+.item1:nth-of-type(2){
+    margin-left: 14px;
+    width: 400px;
+    height: 500px;
+    border: 2px solid #08040c;
+    border-radius: 8px;
+    background-color: white;
+}
+.item2:nth-of-type(1){
+    margin-left: 5%;
+    width: 800px;
+    height: 500px;
+    border: 2px solid #08040c;
+    background-color: white;
+}
