@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestasi Tim</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            background: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            margin-bottom: 40px;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 1s, transform 1s;
+        }
+
+        .header {
+            background-color: #00509e;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .achievement-box {
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .achievement-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .achievement-content {
+            padding: 20px;
+        }
+
+        .achievement-content h3 {
+            font-size: 22px;
+            color: #333;
+            margin: 0;
+        }
+
+        .achievement-content p {
+            font-size: 16px;
+            color: #555;
+            margin: 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Prestasi Tim Kami</h1>
+        </div>
+        <div class="achievement-box">
+            <img src="https://via.placeholder.com/600x300" alt="Prestasi Tim">
+            <div class="achievement-content">
+                <h3>Juara 1 Kompetisi Teknologi Nasional</h3>
+                <p>Tim kami berhasil meraih Juara 1 dalam Kompetisi Teknologi Nasional 2025 berkat inovasi teknologi
+                    yang luar biasa.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mengambil elemen yang ingin dianimasikan
+        const achievements = document.querySelectorAll('.container');
+
+        // Fungsi untuk mengecek apakah elemen terlihat di viewport
+        function checkScroll() {
+            achievements.forEach((achievement) => {
+                const rect = achievement.getBoundingClientRect();
+                if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+                    achievement.style.opacity = '1';
+                    achievement.style.transform = 'translateY(0)';
+                }
+            });
+        }
+
+        // Menambahkan event listener saat halaman di-scroll
+        window.addEventListener('scroll', checkScroll);
+
+        // Memanggil fungsi sekali saat halaman pertama dimuat
+        checkScroll();
+    </script>
+</body>
+
+</html>
